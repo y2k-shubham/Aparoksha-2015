@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.carouseldemo.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+
+    <application
+        android:icon="@drawable/aparoksha_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Events By Category"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.mainactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home_test"
+            android:label="home"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.home_test" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Homepage"
+            android:label="@string/title_activity_homepage"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.homepage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Navigationdrawer"
+            android:label="Home"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.navigationdrawer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Roboticsevents"
+            android:label="Robotics"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.roboticsevents" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Events"
+            android:label="@string/title_activity_penaltyshootout"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.events" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventsByDay"
+            android:label="Events By Day"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.eventsbyday" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Display_notification"
+            android:label="title_activity_events_by_day"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.Display_notification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Favorites"
+            android:label="@string/title_activity_favorites"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.favorites" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppDevelopers"
+            android:label="@string/title_activity_app_developers"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.app_developers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="Register "
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.Register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="Login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.Login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Day_1"
+            android:label="title_activity_day_1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Day_2"
+            android:label="title_activity_day_2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Day_3"
+            android:label="title_activity_day_3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Day_Pre"
+            android:label="pre_day"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name=".AlarmReceiver" >
+        </receiver>
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".WebPage"
+            android:label="@string/title_activity_web_page"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Organizers"
+            android:label="Organizers"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.carouseldemo.main.organizers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
